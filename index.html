@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0a1020">
+  <meta name="description" content="نوفا ديجيتال — متجرك للمنتجات الرقمية والاشتراكات والأدوات الإبداعية.">
+  <title>نوفا ديجيتال | كل الرقميات في مكان واحد</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="announcement-bar">
+    <span class="announcement-dot"></span>
+    <span>عالمك الرقمي يبدأ من هنا</span>
+    <span class="announcement-separator">✦</span>
+    <span>منتجات رقمية • تجربة شراء سهلة</span>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="نوفا ديجيتال - الصفحة الرئيسية">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 44 44" fill="none"><path d="M22 3.5 39.5 13.6V30.4L22 40.5 4.5 30.4V13.6L22 3.5Z" stroke="currentColor" stroke-width="2"/><path d="M13.5 28.5V15.5L30.5 28.5V15.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span class="brand-copy"><strong>نوفا<span> ديجيتال</span></strong><small>NOVA DIGITAL STORE</small></span>
+      </a>
+
+      <nav class="main-nav" aria-label="التنقل الرئيسي">
+        <a class="nav-link active" href="#home">الرئيسية</a>
+        <a class="nav-link" href="#products">المنتجات</a>
+        <a class="nav-link" href="#why-us">ليه نوفا؟</a>
+        <a class="nav-link" href="#faq">الأسئلة الشائعة</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-button search-toggle" id="searchToggle" aria-label="فتح البحث" title="بحث"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg></button>
+        <button class="cart-button" id="openCart" aria-label="فتح سلة المشتريات"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="9.5" cy="20" r="1"/><circle cx="17.5" cy="20" r="1"/></svg><span>السلة</span><b id="cartCount">0</b></button>
+        <button class="mobile-menu-button" id="mobileMenuButton" aria-label="فتح القائمة"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+    <div class="search-row" id="searchRow" hidden>
+      <div class="container search-row-inner"><svg viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg><input id="productSearch" type="search" placeholder="دوّر على منتجك المفضل..." aria-label="ابحث عن المنتجات"><button id="clearSearch" type="button">مسح</button></div>
+    </div>
+    <div class="mobile-nav" id="mobileNav" hidden>
+      <a href="#home">الرئيسية</a><a href="#products">المنتجات</a><a href="#why-us">ليه نوفا؟</a><a href="#faq">الأسئلة الشائعة</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-glow hero-glow-one"></div><div class="hero-glow hero-glow-two"></div>
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="eyebrow-star">✦</span> وجهتك لكل ما هو رقمي</div>
+          <h1>ارتقِ بعالمك الرقمي<br><span>بلمسة واحدة.</span></h1>
+          <p class="hero-description">أدوات إبداعية، اشتراكات، قوالب، ومنتجات رقمية مختارة بعناية — كل اللي تحتاجه لتبدأ وتنجز وتبدع.</p>
+          <div class="hero-cta-row"><a href="#products" class="button button-primary">اكتشف المنتجات <span>←</span></a><a href="#why-us" class="text-link">اكتشف تجربة نوفا <span>↗</span></a></div>
+          <div class="hero-trust-row"><div class="trust-avatars"><span>ن</span><span>م</span><span>ع</span><b>+</b></div><div><strong>كل شيء في مكان واحد</strong><small>تجربة واضحة من الاختيار لتأكيد الطلب</small></div><div class="hero-rating"><span>★</span><strong>تجربة مميزة</strong></div></div>
+        </div>
+        <div class="hero-visual" aria-label="تصميم تجريدي يمثل عالم المنتجات الرقمية">
+          <div class="visual-orbit orbit-outer"></div><div class="visual-orbit orbit-inner"></div>
+          <div class="floating-card floating-card-top"><span class="mini-icon purple">✦</span><div><b>أفكار بلا حدود</b><small>ابدأ مشروعك بطريقتك</small></div><span class="card-status"></span></div>
+          <div class="main-visual-card"><div class="visual-card-top"><span>YOUR NEXT BIG IDEA</span><span class="visual-menu">•••</span></div><div class="visual-symbol">N<span>.</span></div><div class="visual-line line-long"></div><div class="visual-line line-short"></div><div class="visual-card-bottom"><span class="visual-chip">DIGITAL GOODS</span><span class="visual-arrow">↗</span></div></div>
+          <div class="floating-card floating-card-bottom"><span class="mini-icon green">✓</span><div><b>خطوتك الجاية أسهل</b><small>منتجات تناسب شغلك</small></div></div>
+          <div class="visual-spark spark-one">✦</div><div class="visual-spark spark-two">✧</div><div class="visual-spark spark-three">✦</div>
+        </div>
+      </div>
+      <div class="container hero-bottom"><span></span><p>اختار اللي يناسبك، ضيفه للسلة، وكمل طلبك بسهولة.</p><span></span></div>
+    </section>
+
+    <section class="benefit-strip" id="why-us">
+      <div class="container benefit-grid">
+        <article class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M12 3 20 6v5c0 5-3.4 8.3-8 10-4.6-1.7-8-5-8-10V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg></span><div><b>اختيارات بعناية</b><small>منتجات رقمية مختارة لك</small></div></article>
+        <article class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span><div><b>تجربة سريعة</b><small>خطوات طلب بسيطة وواضحة</small></div></article>
+        <article class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M4 5h16v11H4z"/><path d="M8 20h8M12 16v4M8 9h8M8 12h5"/></svg></span><div><b>عالم رقمي متنوع</b><small>أدوات، قوالب، وموارد</small></div></article>
+        <article class="benefit-item"><span class="benefit-icon"><svg viewBox="0 0 24 24"><path d="M4 13v-2a8 8 0 0 1 16 0v2"/><path d="M4 12h3v6H5a2 2 0 0 1-2-2v-2a2 2 0 0 1 1-2ZM20 12h-3v6h2a2 2 0 0 0 2-2v-2a2 2 0 0 0-1-2ZM17 19c-1 1-2.5 1.5-5 1.5"/></svg></span><div><b>مساعدة عند الحاجة</b><small>قناة دعم واضحة للتواصل</small></div></article>
+      </div>
+    </section>
+
+    <section class="products-section section-padding" id="products">
+      <div class="container">
+        <div class="section-heading"><div><span class="section-kicker">اختيارات نوفا</span><h2>منتجات رقمية <span>تستاهل التجربة.</span></h2><p>اكتشف أدوات تساعدك تشتغل بذكاء وتعبّر عن أفكارك بحرية.</p></div><a class="all-products-link" href="#productGrid">تصفّح المنتجات <span>←</span></a></div>
+        <div class="catalog-toolbar"><div class="category-tabs" id="categoryTabs" role="group" aria-label="تصفية حسب التصنيف"><button class="category-tab active" data-category="all">كل المنتجات <span>06</span></button><button class="category-tab" data-category="subscriptions">اشتراكات</button><button class="category-tab" data-category="design">تصميم وقوالب</button><button class="category-tab" data-category="learning">تعلم ومعرفة</button><button class="category-tab" data-category="gaming">ألعاب وترفيه</button></div><label class="sort-select-wrap"><span>ترتيب حسب</span><select id="sortSelect" aria-label="ترتيب المنتجات"><option value="featured">الأكثر ترشيحًا</option><option value="price-low">السعر: من الأقل للأعلى</option><option value="price-high">السعر: من الأعلى للأقل</option></select></label></div>
+        <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        <div class="empty-state" id="emptyState" hidden><span>⌕</span><h3>ملقيناش المنتج ده</h3><p>جرّب كلمة بحث مختلفة أو اختار تصنيف تاني.</p><button class="button button-secondary" id="resetFilters">عرض كل المنتجات</button></div>
+        <div class="catalog-footnote"><span class="footnote-icon">ⓘ</span> الأسعار المعروضة بالجنيه المصري. تفاصيل المنتج والتسليم الفعلي تُحدد عند تجهيز المتجر للإطلاق.</div>
+      </div>
+    </section>
+
+    <section class="promo-section"><div class="container promo-card"><div class="promo-decoration promo-decoration-one"></div><div class="promo-decoration promo-decoration-two"></div><div class="promo-copy"><span class="promo-label">جاهز لخطوتك الجاية؟</span><h2>فكرتك تستاهل<br>أدوات <span>أفضل.</span></h2><p>ابدأ باستكشاف الموارد الرقمية، واختار اللي يخدم أهدافك.</p><a href="#products" class="button button-light">اكتشف المتجر <span>←</span></a></div><div class="promo-art" aria-hidden="true"><div class="promo-art-ring ring-one"></div><div class="promo-art-ring ring-two"></div><div class="promo-art-center">N<span>.</span></div><div class="promo-art-tag tag-top">CREATE</div><div class="promo-art-tag tag-bottom">EXPLORE ✦</div></div></div></section>
+
+    <section class="faq-section section-padding" id="faq"><div class="container faq-layout"><div class="faq-intro"><span class="section-kicker">محتاج تعرف إيه؟</span><h2>أسئلة شائعة،<br><span>وإجابات واضحة.</span></h2><p>جمعنالك أهم التفاصيل عشان تبقى تجربة التسوق أسهل.</p><a class="text-link faq-contact" href="mailto:support@novadigital.example">تواصل مع الدعم <span>↗</span></a></div><div class="faq-list">
+      <details class="faq-item" open><summary>إزاي أطلب منتج من نوفا؟<span class="faq-plus"></span></summary><p>اختار المنتج واضغط «أضف للسلة»، راجع الكمية والإجمالي، ثم افتح إتمام الطلب واكتب بيانات التواصل المطلوبة.</p></details>
+      <details class="faq-item"><summary>هل الدفع الإلكتروني شغال؟<span class="faq-plus"></span></summary><p>النسخة الحالية واجهة تجريبية فقط؛ لا تتم معالجة أي مدفوعات حقيقية. يلزم ربط Backend وبوابة دفع معتمدة قبل تفعيل الدفع الفعلي.</p></details>
+      <details class="faq-item"><summary>هل هيوصلني المنتج تلقائيًا بعد الطلب؟<span class="faq-plus"></span></summary><p>تأكيد الطلب هنا تجريبي ومحفوظ في متصفحك فقط. إرسال الملفات أو أكواد الاشتراكات تلقائيًا يحتاج نظام تسليم وربطًا بخدمة بريد أو قاعدة بيانات.</p></details>
+      <details class="faq-item"><summary>هل أقدر أغيّر الكمية أو أحذف منتج؟<span class="faq-plus"></span></summary><p>أيوه، تقدر تعدّل الكمية أو تحذف المنتج من سلة المشتريات قبل تأكيد الطلب.</p></details>
+    </div></div></section>
+
+    <section class="newsletter-section"><div class="container newsletter-inner"><div><span class="section-kicker">خليك قريب من نوفا</span><h2>الجديد الرقمي، أول ما يوصل.</h2><p>سجّل بريدك في النموذج التجريبي لتشوف تجربة الاشتراك.</p></div><form id="newsletterForm" class="newsletter-form"><label class="sr-only" for="newsletterEmail">البريد الإلكتروني</label><input id="newsletterEmail" type="email" placeholder="بريدك الإلكتروني" required><button type="submit" class="button button-primary">سجّلني <span>←</span></button><small>نموذج توضيحي — لن يتم إرسال بريد فعلي.</small></form></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="container footer-main"><div class="footer-brand-col"><a class="brand footer-brand" href="#home"><span class="brand-mark"><svg viewBox="0 0 44 44" fill="none"><path d="M22 3.5 39.5 13.6V30.4L22 40.5 4.5 30.4V13.6L22 3.5Z" stroke="currentColor" stroke-width="2"/><path d="M13.5 28.5V15.5L30.5 28.5V15.5" stroke="currentColor" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="brand-copy"><strong>نوفا<span> ديجيتال</span></strong><small>NOVA DIGITAL STORE</small></span></a><p>مساحتك لاكتشاف منتجات وأدوات رقمية تساعدك تبدع وتنجز أكتر.</p></div><div class="footer-links"><b>تصفّح</b><a href="#home">الرئيسية</a><a href="#products">كل المنتجات</a><a href="#why-us">ليه نوفا؟</a></div><div class="footer-links"><b>مساعدة</b><a href="#faq">الأسئلة الشائعة</a><a href="mailto:support@novadigital.example">اتصل بنا</a><a href="#faq">سياسة الطلبات التجريبية</a></div><div class="footer-social"><b>خلّيك على تواصل</b><p>ابعتلنا استفسارك، وهنساعدك تختار الأنسب لمشروعك.</p><a href="mailto:support@novadigital.example" class="footer-email">support@novadigital.example <span>↗</span></a></div></div><div class="container footer-bottom"><span>© <span id="year"></span> نوفا ديجيتال. جميع الحقوق محفوظة.</span><span class="footer-bottom-note"><span class="green-dot"></span> تصميم تجريبي قابل للتخصيص</span></div></footer>
+
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-modal="true" role="dialog" hidden>
+    <div class="drawer-header"><div><span class="drawer-kicker">YOUR BAG</span><h2 id="cartTitle">سلة المشتريات <span id="drawerCount">(0)</span></h2></div><button class="close-button" id="closeCart" aria-label="إغلاق السلة">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><div class="empty-cart-icon"><svg viewBox="0 0 24 24"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 8H6"/><circle cx="9.5" cy="20" r="1"/><circle cx="17.5" cy="20" r="1"/></svg></div><h3>سلتك لسه فاضية</h3><p>فيه حاجات رقمية كتير مستنياك تكتشفها.</p><button class="button button-secondary" id="continueShopping">تصفّح المنتجات</button></div>
+    <div class="drawer-footer" id="drawerFooter"><div class="subtotal-row"><span>الإجمالي الفرعي</span><strong id="cartSubtotal">0 ج.م</strong></div><div class="subtotal-row muted-row"><span>التوصيل</span><span>رقمي — بدون شحن</span></div><div class="total-row"><span>الإجمالي</span><strong id="cartTotal">0 ج.م</strong></div><button class="button button-primary checkout-button" id="checkoutButton">إتمام الطلب <span>←</span></button><p class="secure-note"><span>◇</span> لن يتم خصم أي مبلغ في النسخة التجريبية</p></div>
+  </aside>
+
+  <section class="checkout-modal" id="checkoutModal" role="dialog" aria-modal="true" aria-labelledby="checkoutTitle" hidden>
+    <div class="checkout-header"><div><span class="drawer-kicker">CHECKOUT</span><h2 id="checkoutTitle">إتمام الطلب</h2><p>كمّل بياناتك عشان نجهز ملخص طلبك.</p></div><button class="close-button" id="closeCheckout" aria-label="إغلاق نافذة إتمام الطلب">×</button></div>
+    <form id="checkoutForm">
+      <div class="checkout-form-grid"><label class="form-field field-full"><span>الاسم بالكامل <i>*</i></span><input name="fullName" autocomplete="name" required minlength="3" placeholder="اكتب اسمك"></label><label class="form-field"><span>البريد الإلكتروني <i>*</i></span><input name="email" type="email" autocomplete="email" required placeholder="name@example.com"></label><label class="form-field"><span>رقم الموبايل <small>(اختياري)</small></span><input name="phone" type="tel" autocomplete="tel" placeholder="01xxxxxxxxx"></label><label class="form-field field-full"><span>طريقة الدفع المفضلة <i>*</i></span><select name="paymentMethod" required><option value="" selected disabled>اختار طريقة الدفع</option><option value="wallet">محفظة إلكترونية (تجريبي)</option><option value="bank">تحويل بنكي (تجريبي)</option><option value="card">بطاقة بنكية (غير مفعّل)</option></select></label><label class="form-field field-full"><span>ملاحظات على الطلب <small>(اختياري)</small></span><textarea name="notes" rows="2" placeholder="أي تفاصيل إضافية..."></textarea></label></div>
+      <div class="checkout-summary"><div><span>عدد المنتجات</span><strong id="checkoutItemCount">0</strong></div><div><span>الإجمالي المستحق</span><strong id="checkoutTotal">0 ج.م</strong></div></div>
+      <p class="demo-disclaimer"><span>ⓘ</span> هذه تجربة Checkout توضيحية فقط. اختيار طريقة الدفع لا ينفّذ عملية دفع فعلية.</p>
+      <button class="button button-primary submit-order-button" type="submit">تأكيد الطلب التجريبي <span>←</span></button>
+      <button class="back-to-cart" type="button" id="backToCart">العودة إلى السلة</button>
+    </form>
+  </section>
+
+  <section class="success-modal" id="successModal" role="dialog" aria-modal="true" aria-labelledby="successTitle" hidden>
+    <button class="close-button success-close" id="closeSuccess" aria-label="إغلاق تأكيد الطلب">×</button><div class="success-symbol"><svg viewBox="0 0 24 24"><path d="m5 12.5 4.3 4.3L19.5 6.8"/></svg></div><span class="section-kicker">ORDER CREATED</span><h2 id="successTitle">طلبك التجريبي اتسجّل!</h2><p>تم حفظ ملخص الطلب في هذا المتصفح. ده مش تأكيد دفع أو شراء فعلي.</p><div class="order-number-box"><span>رقم الطلب</span><strong id="successOrderId">NOVA-000000</strong><button type="button" id="copyOrderId" aria-label="نسخ رقم الطلب">▢</button></div><div class="success-summary"><div><span>الإجمالي</span><strong id="successTotal">0 ج.م</strong></div><div><span>البريد الإلكتروني</span><strong id="successEmail">—</strong></div></div><button class="button button-primary success-done" id="doneSuccess">العودة للمتجر <span>←</span></button></section>
+
+  <div class="toast-region" id="toastRegion" aria-live="polite" aria-atomic="true"></div>
+</body>
+</html>
